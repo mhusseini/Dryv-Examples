@@ -27,9 +27,9 @@ public class Model6
             : null);
 
     public static readonly DryvRules Rules2 = DryvRules
-        .For<Model6>()
-        .Rule(m => m.Child.Name, m => string.IsNullOrWhiteSpace(m.Child.Name)
-            ? $"{nameof(Model7.Name)} of {nameof(Model7)} must not be empty"
+        .For<Model7>()
+        .Rule(m => m.Name, m => string.IsNullOrWhiteSpace(m.Name)
+            ? $"{nameof(Model7.Name)} of {nameof(Model7)} not be empty"
             : null);
 
     [DryvRules]

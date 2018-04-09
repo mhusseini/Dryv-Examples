@@ -9,9 +9,10 @@ namespace Dryv.Demo.Models
             .Rule(m => m.Name, m => string.IsNullOrWhiteSpace(m.Name)
                 ? $"{nameof(Model6.Name)} of {nameof(Model6)} must not be empty"
                 : null);
+
         public static readonly DryvRules Rules2 = DryvRules
-            .For<Model6>()
-            .Rule(m => m.Child.Name, m => string.IsNullOrWhiteSpace(m.Child.Name)
+            .For<Model7>()
+            .Rule(m => m.Name, m => string.IsNullOrWhiteSpace(m.Name)
                 ? $"{nameof(Model7.Name)} of {nameof(Model7)} not be empty"
                 : null);
 
