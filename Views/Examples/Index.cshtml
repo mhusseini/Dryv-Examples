@@ -1,7 +1,7 @@
 ﻿@using Dryv.Demo.Models
-@model Dryv.Demo.Models.Model1
+@model Model1
 @{
-    this.ViewData["Title"] = "Examples";
+    ViewData["Title"] = "Examples";
 }
 <cache>
     <section class="doc-section">
@@ -43,14 +43,6 @@
 
 @section Scripts {
     <script>
-        $(document).ready(function () {
-            $("form").validate({
-                submitHandler: function (form) {
-                    debugger;
-                }
-            });
-        });
-
         function send(form, $parent) {
             var $form = $(form);
             var id = form.id;
