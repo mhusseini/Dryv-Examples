@@ -53,6 +53,7 @@
 
         function send(form, $parent) {
             var $form = $(form);
+            var id = form.id;
             var language = $("#Locale", $form).val();
             var headers = undefined;
             if (language) {
@@ -66,8 +67,11 @@
                 data: $form.serialize(),
                 headers: headers,
                 success: function (response) {
-                    $parent.html(response);
-                    $("form", $parent).validate();
+                    $form.removeData("validator").removeData("unobtrusiveValidation");
+                    var dom = $(response);
+                    var newForm = $("#" + id, dom);
+                    $parent.html(newForm[0].outerHTML);
+                    $.validator.unobtrusive.parse("form");
                 }
             });
         }
