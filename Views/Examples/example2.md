@@ -22,6 +22,7 @@ public class Model
                 ? DryvResult.Success
                 : $"The company name must begin with '{o.Value.CompanyPrefix}'.");
 
+	[Required]
     [DryvRules]
     public string Company { get; set; }
 }

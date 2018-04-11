@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.Extensions.Options;
 
 namespace Dryv.Demo.Models
 {
@@ -11,6 +12,7 @@ namespace Dryv.Demo.Models
                     ? DryvResult.Success
                     : $"The company name must begin with '{o.Value.CompanyPrefix}'.");
 
+        [Required]
         [DryvRules]
         public string Company { get; set; }
     }
