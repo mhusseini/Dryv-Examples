@@ -8,9 +8,7 @@ namespace Dryv.Demo.Models
         public static readonly DryvRules Rules = DryvRules
             .For<Model8>()
             .Rule(m => m.Name,
-                m => !string.IsNullOrWhiteSpace(m.Name)
-                    ? DryvResult.Success
-                    : m.IsManly && m.Name.EndsWith("or")
+                m => !m.IsManly || m.Name.EndsWith("or")
                         ? DryvResult.Success
                         : DryvResult.Error("Overly manly names must end with 'or'."));
 

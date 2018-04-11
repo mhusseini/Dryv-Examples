@@ -18,10 +18,10 @@ namespace Dryv.Demo.Controllers
         public IActionResult Example4(Model4 model) => this.View("example4.partial", model);
 
         [HttpPost]
-        public IActionResult Example4(Model6 model) => this.View("example6.partial", model);
+        public IActionResult Example5(Model5 model) => this.View("example5.partial", model);
 
         [HttpPost]
-        public IActionResult Example5(Model5 model) => this.View("example5.partial", model);
+        public IActionResult Example6(Model8 model) => this.View("example6.partial", model);
 
         public IActionResult Index()
         {
