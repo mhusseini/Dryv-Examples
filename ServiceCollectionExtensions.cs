@@ -16,6 +16,7 @@ namespace Dryv.Demo
         private static void RegisterCookieOptions<T>(IServiceCollection services)
             where T : class, new()
         {
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(s =>
             {
                 var request = s.GetRequiredService<IHttpContextAccessor>().HttpContext.Request;
