@@ -1,7 +1,7 @@
-﻿using Dryv.Demo.Models;
+﻿using DryvDemo.Areas.Examples.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Dryv.Demo.Controllers
+namespace DryvDemo.Areas.Examples.Controllers
 {
     public class ExamplesController : Controller
     {

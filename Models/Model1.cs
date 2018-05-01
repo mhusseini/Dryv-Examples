@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Dryv;
 
-namespace Dryv.Demo.Models
+namespace DryvDemo.Areas.Examples.Models
 {
     public class Model1
     {

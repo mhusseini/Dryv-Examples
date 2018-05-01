@@ -1,4 +1,6 @@
-﻿namespace Dryv.Demo.Models
+﻿using Dryv;
+
+namespace DryvDemo.Areas.Examples.Models
 {
     public class Model4
     {

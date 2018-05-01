@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Dryv;
+using Microsoft.Extensions.Options;
 
-namespace Dryv.Demo.Models
+namespace DryvDemo.Areas.Examples.Models
 {
     public class Model3
     {

@@ -1,9 +1,9 @@
-﻿using Dryv.Demo.Models;
+﻿using DryvDemo.Areas.Examples.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace Dryv.Demo
+namespace DryvDemo.Areas.Examples
 {
     public static class ServiceCollectionExtensions
     {

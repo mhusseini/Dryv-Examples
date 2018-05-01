@@ -1,9 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
-using Dryv.Demo.Models;
+using DryvDemo.Areas.Examples.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace Dryv.Demo.Controllers
+namespace DryvDemo.Areas.Examples.Controllers
 {
     public class OptionsController : Controller
     {
